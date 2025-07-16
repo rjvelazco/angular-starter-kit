@@ -1,3 +1,4 @@
 npm run lint
 npm run format
+# If any files are changed due to linting or formatting, add them to the commit
 git add .
