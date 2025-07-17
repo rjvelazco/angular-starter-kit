@@ -1,18 +1,80 @@
-# AngularStarterKit
+# Angular Starter Kit
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.1.
+A ready-to-use Angular project with ESLint, Prettier, and Husky pre-configured for a modern development workflow.
 
-## Development server
+## Features
 
-To start a local development server, run:
+- **Angular 20.0.0** - Latest Angular framework
+- **ESLint** - Code linting with TypeScript and Angular rules
+- **Prettier** - Code formatting with consistent styling
+- **Husky** - Git hooks for automated code quality checks
+- **Pre-commit hooks** - Automatic linting and formatting before commits
 
-```bash
-ng serve
-```
+## Configuration
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### ESLint
 
-## Code scaffolding
+- TypeScript ESLint rules
+- Angular-specific linting rules
+- Prettier integration for consistent formatting
+- Custom component and directive selector rules
+
+### Prettier
+
+- 2-space indentation
+- Single quotes
+- Semicolons enabled
+- 120 character line width
+- ES5 trailing commas
+
+### Husky Pre-commit Hook
+
+Automatically runs before each commit:
+
+- `npm run lint` - Lints all code
+- `npm run format` - Formats code with Prettier
+- `git add .` - Stages any formatting changes
+
+## Getting Started
+
+1. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+2. **Start development server**
+
+   ```bash
+   npm start
+   ```
+
+3. **Build for production**
+   ```bash
+   npm run build
+   ```
+
+## Available Scripts
+
+- `npm start` - Start development server
+- `npm run build` - Build for production
+- `npm run test` - Run unit tests
+- `npm run lint` - Run ESLint
+- `npm run format` - Format code with Prettier
+- `npm run watch` - Build in watch mode
+
+## Development Workflow
+
+The project ensures code quality through:
+
+- Automated linting on every commit
+- Consistent code formatting
+- Angular best practices enforcement
+- TypeScript strict checking
+
+Simply code and commit - the tools will handle the rest!
+
+## Code Scaffolding
 
 Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
@@ -25,34 +87,6 @@ For a complete list of available schematics (such as `components`, `directives`,
 ```bash
 ng generate --help
 ```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
 ## Additional Resources
 
